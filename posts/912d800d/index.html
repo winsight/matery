@@ -544,13 +544,21 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/matery/libs/prism/prism.css">
+        
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="382dd0fd82cf8aed796f46c1f32d16ec1526c3ab1b2593e7aff3b4778c80b8a1">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8403889b6c438821c099230c528e1e072086db67c3268f0c3fbef4285ecdfb74d10c44a10a54b42bc087ce2562c8b1b0d82c747e40ef6687175228e1aa7de665ca0630685dfdfd49a11eb58a99d311c252752a333719030d038bb8d865dd3e440bff3cd209fe3ca3a26fb5772705760421ee28b997bb286ef46d1032c18074a8e246561747fdd0075ca6225243eda2f1573f5200046bab94df0cc34e81fa272d542e5a9b0fc8b779b01e7fe3c854def2bd896ced22365a8086e82075cb9c90c27045f8430256183e16f1c86ff93991705bfd49ecf2e9d11c19185e740d9c3c715955b3ee64d0cf5cf915c4df8b28a54172d4f535555bddce2ceb1b1c62fbd21edbb0062d4a0b7cc70e4077ee187b2b944a76b3f09b5c516e054aae83276eed21d8707328b5cf2cda4b981de22da66221597a491f1a4a5fee8fa0166473266f7addfa95cd917d4ccf923c2f04f26bcd45c086e828f9f35967632c24d43c5e5fe84e9591be988d53ac63fac12611376edab28d68910454a9aee602ea29cf970de968ed9dc5dc5cd256817114aa27fb6f25f37d4bb67597404808bff9d821b58b86bfe5a614a6d4e81f4f1d222c36e052b6c3bf54262d68e0690dfcd67d2ded0935134b42e8c95c165c8f3f38040ff786bc736cdd5f7e6a6bfa98396101fed25840537a89af2a3ae18df8f87d479bcd509bc961e30cc8c2d8f779dd0bbd5c6ad39d558683aa55b56d3c6da1bb99863db8625ae3a7f1c3f80d240fe14e578c121c36199201132d29fc92019f199ae42acf2e276564adb495242994476c246245c60a8f4</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2e41685dd9665a1d0495cc2e0047e2666dd7fc02cad0af3d5dff32af560f29fb">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8400c26cb53f1df3549f1dd4374837f4afad26c4bcebfc91da17a858047cffcabb374882e68b4f2eb3b2076175457a48050068acafe49383337eaad645ce94befdc1c0be60245278b00454e52460da8559d0234e8d917289847e7c2d3618de88bf88a83f9c325633632cf224cc127ee37259b3db1de054f6903aeafcbc5e961fecabaf6bcd116c768176997a0f7d6981802321a5be5295787cafd5b3bcdf600da4a4dd3f50539d926687c23af82353f815051a252310c4e47c82c98296e080edd4f48a2b6378554dd8876f934b6900c51c54afa0aea44e5612b25593662f5effac56ebebd8519069b818de1e4eff6532a7fc12f395abf420eba9881af5a3a472da4d59c14d6433e0aeba62b2f57a01fa77a9d0d1f8cf0af6cd61ad5cd779e3a2bdc3b9493f32136fcd5190b67dd8e8b7519c9f2afdef0071697240020cb7d3ba516bc66395ded6c2ba4953a773eed1b3d7c361047960da4d661e26043c7e3d74d66d25e15e4978bdddca2c4e2f4aa97cf42291d39f9775679a5e421f7393231176769fe8870630bca8f69c830bf15307cde8882e367ba11c43aef1da6c43f6ad90c0acc725d70caa640910835a024bf4955bdf7ab8aa3c938f124c3bcc38950089ec7fb7103a701d31eaadf74ab2ecaddf4916210a73fd90081eb345942e65ce421428769132715c696a76c59333d2ecdb7fe27d9ec426a4381eeae1114544e9f6c3b305cf534010ca5f1483b3e9a59c07aaf9ebec41c52bba7355690265a2c6b16dd8a9b03e1a0e1e978a85ec9922dd609cfe16a314301ec8824b1352e82a4f22b79cb464a359f036c876106932c714455</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -560,7 +568,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+<script data-pjax src="/matery/lib/hbe.js"></script><link href="/matery/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -1205,8 +1213,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/matery/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1214,8 +1220,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/matery/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1390,7 +1394,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">13.5k</span>
             
             
             

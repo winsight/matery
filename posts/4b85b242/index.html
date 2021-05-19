@@ -539,7 +539,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    850
+                    860
                 </div>
                 
 
@@ -561,31 +561,51 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/matery/libs/prism/prism.css">
+        
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="安装和配置环境"><a href="#安装和配置环境" class="headerlink" title="安装和配置环境"></a>安装和配置环境</h1><p>本教程系统平台为win10 64位家庭中文版。</p>
+                <h1 id="安装和配置环境"><a href="#安装和配置环境" class="headerlink" title="安装和配置环境"></a>安装和配置环境</h1><p>本教程系统平台为win10 64位家庭中文版。</p>
 <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>从Git官网地址：<a target="_blank" rel="noopener" href="https://www.git-scm.com/download/">https://www.git-scm.com/download/</a> 下载Git软件，按默认选项安装即可。</p>
 <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>从node.js官网：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a> 下载Node.js软件，推荐下载稳定版本，然后按默认选项安装即可。安装完成后，打开cmd.exe，输入node -v，若能正常显示版本号，则说明安装成功。</p>
 <h2 id="安装Hexo、预览本地hexo博客"><a href="#安装Hexo、预览本地hexo博客" class="headerlink" title="安装Hexo、预览本地hexo博客"></a>安装Hexo、预览本地hexo博客</h2><p>在本地新建一个目录如hexo_blog用来存储hexo博客源码，然后在该目录下打开cmd.exe或Git bash here，依次运行下列命令(一个指令运行完再运行下一个指令)：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g #安装hexo命令行工具</span><br><span class="line">hexo init #下载hexo博客初始源码</span><br><span class="line">npm install #安装npm</span><br><span class="line">hexo s 或 hexo server #启动本地服务器,可预览本地hexo博客</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">npm install hexo-cli -g #安装hexo命令行工具
+hexo init #下载hexo博客初始源码
+npm install #安装npm
+hexo s 或 hexo server #启动本地服务器,可预览本地hexo博客</code></pre>
 
 <p>如果正常安装完成，在浏览器中访问：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 就可以看到运行在本地服务器上的博客了。</p>
 <p><strong>注意：</strong></p>
 <p>如果你使用的是Microsoft Edge浏览器，访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 时可能会失败，原因是这个浏览器经常偷偷地自动打开使用代理服务器127.0.0.1。关闭后即可正常访问。还有一种可能是你的4000端口被占用了。</p>
 <h2 id="在Github上部署hexo博客"><a href="#在Github上部署hexo博客" class="headerlink" title="在Github上部署hexo博客"></a>在Github上部署hexo博客</h2><p>我将部署到Gitlab的hexo博客源码目录命名为hexo_blog_gitlab，现在将这个目录中的博客源码copy一份到一个新目录，比如我将新目录命名为：hexo_blog_github。在新目录hexo_blog_github下鼠标右键选择Git bash here，然后运行下面的命令，安装用于部署hexo博客到Github上的插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">npm install hexo-deployer-git --save</code></pre>
 
 <p>这是在Github上部署hexo博客时必须使用的插件。<br>在Github网站新建一个公开仓库，<a target="_blank" rel="noopener" href="http://名为yourname.github.io/">名为yourname.github.io</a>，然后勾选Initialize this repository with a README，创建仓库，打开该仓库的settings，如果出现提示：Your site is published at <a target="_blank" rel="noopener" href="https://zgcr.github.io/">https://zgcr.github.io/</a> ,则说明Github pages开启成功。<br>修改新目录hexo_blog_github中的_config.yml文件(注意不是主题中的config.yml文件)，修改相应代码块为以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none"># Deployment
+## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html
+deploy: 
+  type: git
+  repo: git@github.com:yourname&#x2F;yourname.github.io.git
+  branch: master</code></pre>
 
 <p>请把上面的repo内容换成你的Github pags仓库的git链接。完成后，使用下面命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">hexo clean
+hexo g
+hexo d</code></pre>
 
 <p>此时可以正常将hexo博客部署到github上了。<br>要想将博客部署要gitlab上，只需在原目录hexo_blog_gitlab中鼠标右键选择Git bash here，使用下面命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;本次提交描述&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">git add -A
+git commit -m &quot;本次提交描述&quot;
+git push origin master</code></pre>
 
 <p>即可部署hexo博客至Gitlab上。<br><strong>关于Gitlab/Github的博客同步：</strong><br>目前没有太好的方法，我们每次写新文章可在hexo_blog_gitlab目录中的_post目录下新建和修改文章，完成后将_post目录复制粘贴到hexo_blog_github目录中相同位置，然后分别部署hexo博客到Gitlab和Github即可。</p>
 <h3 id="可能存在的问题"><a href="#可能存在的问题" class="headerlink" title="可能存在的问题"></a>可能存在的问题</h3><ul>
@@ -593,16 +613,20 @@
 </ul>
 <h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><p>删除<code>.deploy_git</code>文件夹;</p>
 <p>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">git config --global core.autocrlf false</code></pre>
 
 <p>然后，依次执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">hexo clean
+hexo g
+hexo d</code></pre>
 
 <h5 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h5><p>如果使用GitHub，可以尝试是否能跑通GitHub</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SHELL</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">SHELL
+ssh -T git@github.com</code></pre>
 
 <p><a target="_blank" rel="noopener" href="https://blog.zhheo.com/p/128998ac.html"><strong>👉详细参考链接</strong></a></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">global</span> user.name <span class="string">&quot;winsight&quot;</span></span><br><span class="line">git config --<span class="built_in">global</span> user.email <span class="string">&quot;wangss.ch@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
+<pre class="language-javascript" data-language="javascript"><code class="language-javascript">git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"winsight"</span>
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"wangss.ch@gmail.com"</span></code></pre>
 
 
                 
@@ -1260,8 +1284,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/matery/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1269,8 +1291,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/matery/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1445,7 +1465,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">13.5k</span>
             
             
             

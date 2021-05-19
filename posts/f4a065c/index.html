@@ -544,13 +544,21 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/matery/libs/prism/prism.css">
+        
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="95aa6ab5c1ace1192566d0ddf5bc11bdf71da32bd56bda878b936cd0e0fd50e0">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8403889b6c438821c099230c528e1e072086db67c3268f0c3fbef4285ecdfb74d10c44a10a54b42bc087ce2562c8b1b0d82c747e40ef6687175228e1aa7de665ca0630685dfdfd49a11eb58a99d311c252752a333719030d038bb8d865dd3e440bff3cd209fe3ca3a26fb5772705760421ee28b997bb286ef46d1032c18074a8e24c8823b8af6fd8a38f63c460347bd63cf4776e51fe02b93ed8501195c5cc280218f9c4071518237e42059b4ff4941561e07d975b3c50244556578e6e85de19ed613479e24a89485b1bf89ca664385bc66d76891a0610f7fe05f8523a8f7da520158dd99aa5bde6f81d29b55d966c379e8766c09acfe5457f390b3ae99512667e080f2f5289f09c89f12ea3bd541f3ed764635e0031ea39812762434b36be5560a812cd6772d61987459940124bcf6bc951af6a14352237db8c4db5d91778e9860c257e2b322cc2100422d2f02e906b641261ff62c2c4dc43c64f028a0afe6bfb619248aeb462f2b6c1653869cd95c2fa93bd1036d4c3bcf6171a9d138b169dff6ca96e272408dfe189bb9337155cd14a38998a33bc2b7fadc29d32ab3b3c0644f</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="6bbfe8fdb7a64816bf25f372c104d9dbfc55db67d5fbc4388367ef2c5c9d8430">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8400c26cb53f1df3549f1dd4374837f4afad26c4bcebfc91da17a858047cffcabb374882e68b4f2eb3b2076175457a48050068acafe49383337eaad645ce94befdc1c0be60245278b00454e52460da8559d0234e8d917289847e7c2d3618de88bf88a83f9c325633632cf224cc127ee37259b3db1de054f6903aeafcbc5e961fecabaf6bcd116c768176997a0f7d6981802a3ea30f94a57b7f686efd39990b2b259999498d1e0ee86438f553ce6aa92269d034a8f7e68eec4d1c8c751b8815824fff44a54a03a861259ee3e9629629f4700935957a0fde7a775a3391f6d4d261dc46f905c4c43875a0ace330511f0dc66320a661ef4ef1f8bee5cd95a45481e151262010ff945f6ef60d7b73c25516c851cd8a2a0a898ead3f47dbbd2c4faf58e625e91b0ed00658124c848f0957ef10df26bd79d0da62d49f028a9a5aa1f104161be781e27315c2294111d2cca3a97b62c3c9cf961a954f22db40951c25a082f0a27109ab48c28834fd5ba80f0a34da8aa914bb18b2142ce2ec7ced531b80ca8177cfd8027ec80657ecf7f4a20c7639eda61285e6973d2aca8a4eea07ee2473433c37d1492ab0139c9ce55fc6fe880a7b2</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -560,7 +568,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+<script data-pjax src="/matery/lib/hbe.js"></script><link href="/matery/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -1208,8 +1216,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/matery/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1217,8 +1223,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/matery/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1393,7 +1397,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">13.5k</span>
             
             
             

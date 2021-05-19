@@ -526,14 +526,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    749
+                    649
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    3 Min
                 </div>
                 
 
@@ -548,12 +548,22 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/matery/libs/prism/prism.css">
+        
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="音乐🎵"><a href="#音乐🎵" class="headerlink" title="音乐🎵"></a>音乐🎵</h1><h2 id="示例一-MetingJS播放器"><a href="#示例一-MetingJS播放器" class="headerlink" title="示例一(MetingJS播放器)"></a>示例一(MetingJS播放器)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">&quot;393688&quot;</span> <span class="string">&quot;netease&quot;</span> <span class="string">&quot;song&quot;</span> <span class="string">&quot;theme:#C20C0C&quot;</span> %&#125;</span><br><span class="line"># 只更改 “” 内数字即可</span><br><span class="line"># server必须值 音乐平台: <span class="string">`netease`</span>, <span class="string">`tencent`</span>, <span class="string">`kugou`</span>, <span class="string">`xiami`</span>, <span class="string">`baidu`</span></span><br></pre></td></tr></table></figure>
+                <h1 id="音乐🎵"><a href="#音乐🎵" class="headerlink" title="音乐🎵"></a>音乐🎵</h1><h2 id="示例一-MetingJS播放器"><a href="#示例一-MetingJS播放器" class="headerlink" title="示例一(MetingJS播放器)"></a>示例一(MetingJS播放器)</h2><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> meting <span class="token string">"393688"</span> <span class="token string">"netease"</span> <span class="token string">"song"</span> <span class="token string">"theme:#C20C0C"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+# 只更改 “” 内数字即可
+# server必须值 音乐平台<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">netease</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">tencent</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">kugou</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">xiami</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">baidu</span><span class="token template-punctuation string">`</span></span></code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -561,15 +571,15 @@
             <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
             <meting-js id="393688" server="netease" type="song" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#C20C0C"></meting-js>
 
-<h2 id="示例二（本地资源加载-暂不可用）"><a href="#示例二（本地资源加载-暂不可用）" class="headerlink" title="示例二（本地资源加载\暂不可用）"></a>示例二（本地资源加载\暂不可用）</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer <span class="string">&quot;汤家凤起床唤醒服务&quot;</span> <span class="string">&quot;汤家凤&quot;</span> <span class="string">&quot;tjf.mp3&quot;</span> <span class="string">&quot;tjf.PNG&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="示例二（本地资源加载-暂不可用）"><a href="#示例二（本地资源加载-暂不可用）" class="headerlink" title="示例二（本地资源加载\暂不可用）"></a>示例二（本地资源加载\暂不可用）</h2><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> aplayer <span class="token string">"汤家凤起床唤醒服务"</span> <span class="token string">"汤家凤"</span> <span class="token string">"tjf.mp3"</span> <span class="token string">"tjf.PNG"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span></code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-WYRQfdzJ" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-iTHLfFgn" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_WYRQfdzJ = new APlayer({
-            element: document.getElementById("mmedia-WYRQfdzJ"),
+          var ap_iTHLfFgn = new APlayer({
+            element: document.getElementById("mmedia-iTHLfFgn"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -583,12 +593,13 @@
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_WYRQfdzJ);
+          window.aplayers.push(ap_iTHLfFgn);
         </script>
 
 
 
-<h2 id="示例三：歌单"><a href="#示例三：歌单" class="headerlink" title="示例三：歌单"></a>示例三：歌单</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">&quot;32040661&quot;</span> <span class="string">&quot;netease&quot;</span> <span class="string">&quot;playlist&quot;</span> %&#125;</span><br><span class="line"># 网易</span><br></pre></td></tr></table></figure>
+<h2 id="示例三：歌单"><a href="#示例三：歌单" class="headerlink" title="示例三：歌单"></a>示例三：歌单</h2><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> meting <span class="token string">"32040661"</span> <span class="token string">"netease"</span> <span class="token string">"playlist"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+# 网易</code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -596,7 +607,8 @@
             <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
             <meting-js id="32040661" server="netease" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js>
 
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">&quot;1628995233&quot;</span> <span class="string">&quot;tencent&quot;</span> <span class="string">&quot;playlist&quot;</span> %&#125;</span><br><span class="line"># tencent</span><br></pre></td></tr></table></figure>
+<pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> meting <span class="token string">"1628995233"</span> <span class="token string">"tencent"</span> <span class="token string">"playlist"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+# tencent</code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -604,7 +616,7 @@
             <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
             <meting-js id="1628995233" server="tencent" type="playlist" autoplay="false" mutex="true" listmaxheight="340px" preload="auto" theme="#ad7a86"></meting-js>
 
-<h5 id="进阶示例"><a href="#进阶示例" class="headerlink" title="进阶示例"></a>进阶示例</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting <span class="string">&quot;2690544198&quot;</span> <span class="string">&quot;tencent&quot;</span> <span class="string">&quot;playlist&quot;</span> <span class="string">&quot;autoplay&quot;</span> <span class="string">&quot;mutex:false&quot;</span> <span class="string">&quot;listmaxheight:340px&quot;</span> <span class="string">&quot;preload:none&quot;</span> <span class="string">&quot;theme:#ad7a86&quot;</span>%&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="进阶示例"><a href="#进阶示例" class="headerlink" title="进阶示例"></a>进阶示例</h5><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> meting <span class="token string">"2690544198"</span> <span class="token string">"tencent"</span> <span class="token string">"playlist"</span> <span class="token string">"autoplay"</span> <span class="token string">"mutex:false"</span> <span class="token string">"listmaxheight:340px"</span> <span class="token string">"preload:none"</span> <span class="token string">"theme:#ad7a86"</span><span class="token operator">%</span><span class="token punctuation">&#125;</span></code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
@@ -614,19 +626,20 @@
 
 <p><em><strong><a href="https://winsight.github.io/posts/d77e65f8/">👉具体用法</a></strong></em></p>
 <h2 id="示例四"><a href="#示例四" class="headerlink" title="示例四"></a>示例四</h2><p><strong>直接插入</strong></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;//music.163.com/outchain/player?type=2&amp;id=393688&amp;auto=1(控制自动播放)&amp;height=66&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre class="language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">marginwidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">marginheight</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>330</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>86</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//music.163.com/outchain/player?type=2&amp;id=393688&amp;auto=1(控制自动播放)&amp;height=66<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=393688&auto=0&height=66"></iframe>
 
-<h2 id="示例五"><a href="#示例五" class="headerlink" title="示例五"></a>示例五</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#音乐块，标签分别为“歌名”“作者”“音乐mp3链接”“封面链接”</span><br><span class="line">&#123;% aplayer <span class="string">&quot;Caffeine&quot;</span> <span class="string">&quot;Jeff Williams&quot;</span> <span class="string">&quot;http://home.ustc.edu.cn/~mmmwhy/%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3&quot;</span> <span class="string">&quot;http://home.ustc.edu.cn/~mmmwhy/jay.jpg&quot;</span> <span class="string">&quot;lrc:geci.txt&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="示例五"><a href="#示例五" class="headerlink" title="示例五"></a>示例五</h2><pre class="language-c++" data-language="c++"><code class="language-c++">#音乐块，标签分别为“歌名”“作者”“音乐mp3链接”“封面链接”
+&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;http:&#x2F;&#x2F;home.ustc.edu.cn&#x2F;~mmmwhy&#x2F;%d6%dc%bd%dc%c2%d7%20-%20%cb%fd%b5%c4%bd%de%c3%ab.mp3&quot; &quot;http:&#x2F;&#x2F;home.ustc.edu.cn&#x2F;~mmmwhy&#x2F;jay.jpg&quot; &quot;lrc:geci.txt&quot; %&#125;</code></pre>
 
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
             <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-            <div id="mmedia-RodiNDDh" style="margin-bottom: 20px; width: "></div>
+            <div id="mmedia-oWyqGgza" style="margin-bottom: 20px; width: "></div>
         <script>
-          var ap_RodiNDDh = new APlayer({
-            element: document.getElementById("mmedia-RodiNDDh"),
+          var ap_oWyqGgza = new APlayer({
+            element: document.getElementById("mmedia-oWyqGgza"),
             narrow: false,
             autoplay: false,
             showlrc: 3,
@@ -640,43 +653,44 @@
             undefined
           });
           window.aplayers || (window.aplayers = []);
-          window.aplayers.push(ap_RodiNDDh);
+          window.aplayers.push(ap_oWyqGgza);
         </script>
 
-<h1 id="视频💻"><a href="#视频💻" class="headerlink" title="视频💻"></a>视频💻</h1><h3 id="示例一："><a href="#示例一：" class="headerlink" title="示例一："></a>示例一：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% bilibili <span class="string">&quot;aid:60016166&quot;</span> <span class="string">&quot;quality:high&quot;</span> <span class="string">&quot;danmaku&quot;</span> <span class="string">&quot;allowfullscreen&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="视频💻"><a href="#视频💻" class="headerlink" title="视频💻"></a>视频💻</h1><h3 id="示例一："><a href="#示例一：" class="headerlink" title="示例一："></a>示例一：</h3><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> bilibili <span class="token string">"aid:60016166"</span> <span class="token string">"quality:high"</span> <span class="token string">"danmaku"</span> <span class="token string">"allowfullscreen"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span></code></pre>
 
 
 
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-oFxNSAHv" src="//player.bilibili.com/player.html?aid=60016166&page=1&high_quality=1&danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-AaMuEBrP" src="//player.bilibili.com/player.html?aid=60016166&page=1&high_quality=1&danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-oFxNSAHv").style.height=document.getElementById("mmedia-oFxNSAHv").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-AaMuEBrP").style.height=document.getElementById("mmedia-AaMuEBrP").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-oFxNSAHv").style.height=document.getElementById("mmedia-oFxNSAHv").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-AaMuEBrP").style.height=document.getElementById("mmedia-AaMuEBrP").scrollWidth*0.76+"px";
             };
         </script>
         
 
-<h3 id="示例二："><a href="#示例二：" class="headerlink" title="示例二："></a>示例二：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#哔哩哔哩视频，数字为aid号</span><br><span class="line">&#123;% bilibili <span class="number">587852774</span> %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="示例二："><a href="#示例二：" class="headerlink" title="示例二："></a>示例二：</h3><pre class="language-javascript" data-language="javascript"><code class="language-javascript">#哔哩哔哩视频，数字为aid号
+<span class="token punctuation">&#123;</span><span class="token operator">%</span> bilibili <span class="token number">587852774</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span></code></pre>
 
 <div class="bilibili">
     
         <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>
         <div class="bbplayer">
-        <iframe class="bbplayer" id="mmedia-WEXYbOCX" src="//player.bilibili.com/player.html?aid=null&page=1&high_quality=0&danmaku=false" allowfullscreen="allowfullscreen" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
+        <iframe class="bbplayer" id="mmedia-HknVOrUt" src="//player.bilibili.com/player.html?aid=null&page=1&high_quality=0&danmaku=false" allowfullscreen="allowfullscreen" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         <script>
-            document.getElementById("mmedia-WEXYbOCX").style.height=document.getElementById("mmedia-WEXYbOCX").scrollWidth*0.76+"px";
+            document.getElementById("mmedia-HknVOrUt").style.height=document.getElementById("mmedia-HknVOrUt").scrollWidth*0.76+"px";
             window.onresize = function(){
-              document.getElementById("mmedia-WEXYbOCX").style.height=document.getElementById("mmedia-WEXYbOCX").scrollWidth*0.76+"px";
+              document.getElementById("mmedia-HknVOrUt").style.height=document.getElementById("mmedia-HknVOrUt").scrollWidth*0.76+"px";
             };
         </script>
         
 </div>
 
-<h3 id="示例三（网络直链）"><a href="#示例三（网络直链）" class="headerlink" title="示例三（网络直链）"></a>示例三（网络直链）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">&quot;url=http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4&quot;</span> <span class="string">&quot;pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg&quot;</span> <span class="string">&quot;autoplay=true&quot;</span> <span class="string">&quot;preload=metadata&quot;</span> <span class="string">&quot;hotkey=true&quot;</span> %&#125; </span><br></pre></td></tr></table></figure>
+<h3 id="示例三（网络直链）"><a href="#示例三（网络直链）" class="headerlink" title="示例三（网络直链）"></a>示例三（网络直链）</h3><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> dplayer <span class="token string">"url=http://www.nenu.edu.cn/_upload/article/videos/03/5f/7c999eed42e3aadc413d7f851f0e/0f50b3eb-9285-41d2-ac4d-6cc363651aad_B.mp4"</span> <span class="token string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="token string">"autoplay=true"</span> <span class="token string">"preload=metadata"</span> <span class="token string">"hotkey=true"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span> </code></pre>
 
 
 			<script>
@@ -687,7 +701,7 @@
 
 
 
-<h3 id="示例四（本地资源）"><a href="#示例四（本地资源）" class="headerlink" title="示例四（本地资源）"></a>示例四（本地资源）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">&quot;url=fwz.mp4&quot;</span> <span class="string">&quot;pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg&quot;</span> <span class="string">&quot;autoplay=true&quot;</span>  %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="示例四（本地资源）"><a href="#示例四（本地资源）" class="headerlink" title="示例四（本地资源）"></a>示例四（本地资源）</h3><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span> dplayer <span class="token string">"url=fwz.mp4"</span> <span class="token string">"pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"</span> <span class="token string">"autoplay=true"</span>  <span class="token operator">%</span><span class="token punctuation">&#125;</span></code></pre>
 
 
 			<script>
@@ -699,13 +713,26 @@
 
 
 <h3 id="示例五："><a href="#示例五：" class="headerlink" title="示例五："></a>示例五：</h3><p>可以添加所有有直接链接的视频</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#可以添加所有有直接链接的视频</span><br><span class="line">&lt;iframe </span><br><span class="line">    width=<span class="string">&quot;800&quot;</span> </span><br><span class="line">    height=<span class="string">&quot;450&quot;</span> </span><br><span class="line">    src=<span class="string">&#x27;https://player.youku.com/embed/XNDE5NjYzOTg0OA==&#x27;</span></span><br><span class="line">    frameborder=<span class="string">&quot;0&quot;</span> </span><br><span class="line">    allowfullscreen&gt;</span><br><span class="line">&lt;/iframe&gt;</span><br><span class="line">#可以用下面代码居中</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;bilibili&quot;</span>&gt;</span><br><span class="line">#中间放视频</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<pre class="language-javascript" data-language="javascript"><code class="language-javascript">#可以添加所有有直接链接的视频
+<span class="token operator">&lt;</span>iframe 
+    width<span class="token operator">=</span><span class="token string">"800"</span> 
+    height<span class="token operator">=</span><span class="token string">"450"</span> 
+    src<span class="token operator">=</span><span class="token string">'https://player.youku.com/embed/XNDE5NjYzOTg0OA=='</span>
+    frameborder<span class="token operator">=</span><span class="token string">"0"</span> 
+    allowfullscreen<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>iframe<span class="token operator">></span>
+#可以用下面代码居中
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"bilibili"</span><span class="token operator">></span>
+#中间放视频
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
 
 <iframe width="800" height="450" src="https://player.youku.com/embed/XNDE5NjYzOTg0OA==" frameborder="0" allowfullscreen>
 </iframe>
 
 
-<h3 id="PDF文件"><a href="#PDF文件" class="headerlink" title="PDF文件"></a>PDF文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;%pdf <span class="string">&quot;name.pdf&quot;</span> %&#125;</span><br><span class="line">#本地文件放在相应文件夹中</span><br><span class="line">#网络文件放文件直链</span><br></pre></td></tr></table></figure>
+<h3 id="PDF文件"><a href="#PDF文件" class="headerlink" title="PDF文件"></a>PDF文件</h3><pre class="language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">%</span>pdf <span class="token string">"name.pdf"</span> <span class="token operator">%</span><span class="token punctuation">&#125;</span>
+#本地文件放在相应文件夹中
+#网络文件放文件直链</code></pre>
 
  
 
@@ -1370,8 +1397,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/matery/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1379,8 +1404,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/matery/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1555,7 +1578,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">13.5k</span>
             
             
             

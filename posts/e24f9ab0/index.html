@@ -544,13 +544,21 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/matery/libs/prism/prism.css">
+        
 
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="e8cffe32356392681b26c58424cb7e4097125786cf7799c5e92d1e13e417c3f4">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8403889b6c438821c099230c528e1e072086db67c3268f0c3fbef4285ecdfb74d10c44a10a54b42bc087ce2562c8b1b0d82c747e40ef6687175228e1aa7de665ca0630685dfdfd49a11eb58a99d311c252752a333719030d038bb8d865dd3e440bff3cd209fe3ca3a26fb5772705760421ee28b997bb286ef46d1032c18074a8e24c8823b8af6fd8a38f63c460347bd63cf4776e51fe02b93ed8501195c5cc280215ea2d8c9f9aa6ae7e6125124a812f1a08ee825b3b4dd9ae8a5e3e018c2c05adaba96dae89b61687c04e5d11982bc1feaf215220fc509952dd483cb16df949b01422797df91854a70595ed4e4d0cc6caf309ad11abc3131d2a91518fc48bcf273c1688177310f2e1f4b11c33c0aa2caddb68d9c1e2716136f88f0e1e6013c7667</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="178b8b42a398cbaae5d1b2007112041f3382bf42a08a6ea61040ea2a41f36c87">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff8400c26cb53f1df3549f1dd4374837f4afad26c4bcebfc91da17a858047cffcabb374882e68b4f2eb3b2076175457a48050068acafe49383337eaad645ce94befdc1c0be60245278b00454e52460da8559d0234e8d917289847e7c2d3618de88bf88a83f9c325633632cf224cc127ee37259b3db1de054f6903aeafcbc5e961fecabaf6bcd116c768176997a0f7d6981802321a5be5295787cafd5b3bcdf600da4a4dd3f50539d926687c23af82353f815051a252310c4e47c82c98296e080edd4f48a2b6378554dd8876f934b6900c51c54afa0aea44e5612b25593662f5effac56ebebd8519069b818de1e4eff6532a7fc12f395abf420eba9881af5a3a472da4d59c14d6433e0aeba62b2f57a01fa77a9d0d1f8cf0af6cd61ad5cd779e3a2bdc3b9493f32136fcd5190b67dd8e8b7519c9f2afdef0071697240020cb7d3ba516bc66395ded6c2ba4953a773eed1b3d7c361047960da4d661e26043c7e3d74d66d25e15e4978bdddca2c4e2f4aa97cf42291d39f9775679a5e421f7393231176769fe8870630bca8f69c830bf15307cde8882e367ba11c43aef1da6c43f6ad90c0acc725d70caa640910835a024bf4955bdf7ab8aa3c938f124c3bcc38950089ec7fb7103a701d31eaadf74ab2ecaddf4916210a73fd90081eb345942e65ce421428769132715c696a76c59333d2ecdb7fe27d9ec426a4381eeae1114544e9f6c44bac0ba78813bea9110b7e21ba02f39558cdef3bcd4476278bbcc6fac21f78608a70336a558df3334901f9722b6731046e94dc929e953a10df472f4f26991ba8f1ad39af0624165173c71b1cd39d77a6fd746c037da2d569626bdf8f5825ab2fbb6911bd69e2f61dde0bc6ec74dcaf958beb8c2258021e5473d6982d2ff4ceb</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -560,7 +568,7 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+<script data-pjax src="/matery/lib/hbe.js"></script><link href="/matery/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -1208,8 +1216,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/matery/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1217,8 +1223,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/matery/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1393,7 +1397,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">10.9k</span>
+                        class="white-color">13.5k</span>
             
             
             
